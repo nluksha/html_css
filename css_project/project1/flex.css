@@ -1,0 +1,45 @@
+div {
+  background-color: rgba(229, 200, 155, 0.3);
+}
+
+.container {
+  margin-top: 50px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: center;
+}
+
+.container div {
+  width: 100px
+}
+
+.container div:last-of-type {
+  padding-top: 20px;
+  height: 100px
+}
+
+/*   */
+.content {
+  display: flex;
+}
+
+.content div {
+  height: 200px;
+}
+
+.sidebar1 {
+  flex: 0 2 200px;
+  background-color: cornflowerblue;
+  order: -1;
+}
+
+.main {
+  flex: 0 1 200px;
+}
+.sidebar2 {
+  flex: 0 2 200px;
+  background-color: cyan;
+}

@@ -9,12 +9,12 @@ h1, h2 {
 }
 .data{
   border:greenyellow 1px solid;
-  background-color: gold;
+  background-color: $main-color;
 }
 
 @keyframes glow2 {
   from {
-    background-color: #FF0;
+    background-color: $main-color;
   }
   to {
     background-color: #f6713c;
