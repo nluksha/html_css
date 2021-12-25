@@ -1,0 +1,25 @@
+/* Box Sizing pattern-- */
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+/* --Box Sizing pattern */
+
+body *+* {
+  margin-top: 1.5em;
+}
+
+body {
+  background-color: #709b90;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
