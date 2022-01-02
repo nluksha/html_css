@@ -43,36 +43,59 @@
     </div>
 
     <div class="container">
-      <nav>
-        <div class="dropdown">
-          <div class="dropdown-label">Menu</div>
-          <div class="dropdown-menu">
-            <ul class="submenu">
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Coffeer</a></li>
-              <li><a href="/">Brewers</a></li>
-              <li><a href="/">Specials</a></li>
-              <li><a href="/">About</a></li>
-            </ul>
+      <main class="col-main">
+        <nav>
+          <div class="dropdown">
+            <div class="dropdown-label">Menu</div>
+            <div class="dropdown-menu">
+              <ul class="submenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Coffeer</a></li>
+                <li><a href="/">Brewers</a></li>
+                <li><a href="/">Specials</a></li>
+                <li><a href="/">About</a></li>
+              </ul>
+            </div>
           </div>
+
+          <h1>Some more info text</h1>
+
+          <div class="box one positioned">
+            one
+            <div class="absolute">inner</div>
+          </div>
+          <div class="box two positioned">
+            <div class="absolute">inner</div>
+          </div>
+          <div class="box three"></div>
+        </nav>
+      </main>
+      
+      <aside class="col-sidebar">
+        <div class="affix">
+          <ul class="submenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Coffeer</a></li>
+            <li><a href="/">Brewers</a></li>
+            <li><a href="/">Specials</a></li>
+            <li><a href="/">About</a></li>
+          </ul>
         </div>
-      </nav>
+      </aside>
     </div>
 
-    <h1>Some more info text</h1>
-
     <script type="text/javascript">
-      var button = document.getElementById('open');
-      var close = document.getElementById('close');
-      var modal = document.getElementById('modal');
+      var button = document.getElementById("open");
+      var close = document.getElementById("close");
+      var modal = document.getElementById("modal");
 
-      button.addEventListener('click', e => {
+      button.addEventListener("click", (e) => {
         e.preventDefault();
-        modal.style.display = 'block';
+        modal.style.display = "block";
       });
-      close.addEventListener('click', e => {
+      close.addEventListener("click", (e) => {
         e.preventDefault();
-        modal.style.display = 'none';
+        modal.style.display = "none";
       });
     </script>
   </body>
