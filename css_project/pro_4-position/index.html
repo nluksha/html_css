@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Position</title>
+    <link rel="stylesheet" href="styles.css?v=1.0" />
+  </head>
+  <body>
+    <header class="top-banner">
+      <div class="top-banner-inner">
+        <p>
+          Dad goes to 7-Eleven for chocolate milk and leaves with $1 million Kim
+          Jong Un focuses year-end speech on 'food problem' in North Korea Dan
+          Reeves, ex-NFL coach and player, dead Daniel Craig, Covid experts and
+          a Spice Girl recognized in UK New Year's honors list
+          <button id="open">Subscribe</button>
+        </p>
+      </div>
+    </header>
+
+    <div id="modal" class="modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-body">
+        <button id="close" class="modal-close">Close</button>
+        <h2>News</h2>
+        <p>
+          Reverse discrimination lawsuits filed by 3 White male police officers
+          dismissed See Don Lemon pop out of a lemon cake
+        </p>
+
+        <form>
+          <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" />
+          </p>
+          <p>
+            <button type="submit">Subscribe</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav>
+        <div class="dropdown">
+          <div class="dropdown-label">Menu</div>
+          <div class="dropdown-menu">
+            <ul class="submenu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Coffeer</a></li>
+              <li><a href="/">Brewers</a></li>
+              <li><a href="/">Specials</a></li>
+              <li><a href="/">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <h1>Some more info text</h1>
+
+    <script type="text/javascript">
+      var button = document.getElementById('open');
+      var close = document.getElementById('close');
+      var modal = document.getElementById('modal');
+
+      button.addEventListener('click', e => {
+        e.preventDefault();
+        modal.style.display = 'block';
+      });
+      close.addEventListener('click', e => {
+        e.preventDefault();
+        modal.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>
