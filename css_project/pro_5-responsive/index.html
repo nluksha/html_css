@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive</title>
+    <link rel="stylesheet" href="styles.css?v=1.0" />
+  </head>
+  <body>
+    <header id="header" class="page-header">
+      <div class="title">
+        <h1>Professional method for somebody</h1>
+        <div class="slogan">We love coffee</div>
+      </div>
+    </header>
+
+    <nav id="main-menu" class="menu">
+      <button id="toggle-menu" class="menu-toggle">Hide menu</button>
+      <div class="menu-dropdown">
+        <ul class="nav-menu">
+          <li><a href="./index.html">About</a></li>
+          <li><a href="./index.html">Shope</a></li>
+          <li><a href="./index.html">Menu</a></li>
+          <li><a href="./index.html">Brew</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <aside id="hero" class="hero">
+      Predjama is one of the most extraordinary castles in the world, built in
+      the mouth of a cave complex at the end of a valley in southwest Slovenia.
+      Set halfway up a 400-foot (123-meter) vertical cliff face, it appears in
+      records from 1202 and is listed by Guinness World Records as the world's
+      largest cave castle.
+    </aside>
+
+    <main id="main">
+      <div class="row">
+        <section class="column">
+          <h2 class="subtitle">Monosort</h2>
+          <p>
+            The story focuses on robber baron Erasmus von Lueg, a local Robin
+            Hood hero who fled to the castle in the mid-1480s after killing
+            Count Pappenheim,
+            <a href="./index.html">Marshal of the imperial Habsburg Court</a>,
+            in a duel whose legitimacy was disputed.
+          </p>
+        </section>
+        <section class="column">
+          <h2 class="subtitle">Prepering coffee</h2>
+          <p>
+            As Jurca tells it, when Erasmus went to the outhouse located on a
+            third-floor terrace, the servant lit a wooden torch as a signal.
+            Moments later, a <a href="./index.html">cannonball</a> came
+            whistling through the air, killing Erasmus in the middle of his last
+            bowel movement.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      const button = document.getElementById("toggle-menu");
+      button.addEventListener("click", e => {
+        e.preventDefault();
+        const menu = document.getElementById("main-menu");
+        menu.classList.toggle("is-open");
+      });
+    </script>
+  </body>
+</html>
