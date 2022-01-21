@@ -35,6 +35,11 @@ h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
 a {
   color: var(--medium-green);
 }
@@ -56,6 +61,7 @@ a:active {
   justify-content: space-between;
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0.625em 0;
 }
 
 .home-link {
@@ -69,6 +75,10 @@ a:active {
 .top-nav {
   display: flex;
   list-style-type: none;
+  margin: 0;
+}
+.top-nav > li + li {
+  margin-left: 0.625em;
 }
 .top-nav a {
   display: block;
@@ -98,11 +108,13 @@ a:active {
 .hero__inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 50px 0 200px;
+  padding: 5.56em 12.5em 12.5em 0;
   text-align: right;
 }
 .hero h2 {
   font-size: 1.95rem;
+  margin-top: 0;
+  margin-bottom: 0.625rem;
 }
 
 .button {
@@ -136,9 +148,18 @@ a:active {
 .tile-row > * {
   flex: 1;
 }
+.tile-row > * + * {
+  margin-left: 1.5625em;
+}
 .tile {
   background-color: var(--white);
   border-radius: 0.3em;
+  padding: 1.5625em;
+}
+
+.tile > h4 {
+  margin-top: 0;
+  margin-bottom: 1.5em;
 }
 
 .page-footer {
@@ -153,3 +174,18 @@ a:active {
   text-align:  center;
   font-size: 0.8rem;
 }
+
+.tag-list {
+  list-style: none;
+  padding-left: 0;
+}
+.tag-list > li {
+  display: inline;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  background-color: var(--light-gray);
+  line-height: 2.6;
+}
+
+
