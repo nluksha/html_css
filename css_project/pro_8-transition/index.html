@@ -8,10 +8,36 @@
     <link rel="stylesheet" href="styles.css?v=1.0" />
   </head>
   <body>
-    <button>Place the pointer here</button>
+    <button class="button">Place the pointer here</button>
 
     <div class="container">
       <div class="box"></div>
     </div>
+
+    <div class="dropdown" aria-haspopup="true">
+      <button class="dropdown__toggle">Menu</button>
+      <div class="dropdown__drawer">
+        <ul class="menu" role="menu">
+          <li role="menuitem"><a href="./index.html">Home</a></li>
+          <li role="menuitem"><a href="./index.html">Coffeer</a></li>
+          <li role="menuitem"><a href="./index.html">Brewers</a></li>
+          <li role="menuitem"><a href="./index.html">Specials</a></li>
+          <li role="menuitem"><a href="./index.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <p><a href="./index.html">More info</a></p>
+
+    <script>
+      (function() {
+        let toggle = document.getElementsByClassName("dropdown__toggle")[0];
+        let dropdown = toggle.parentElement;
+
+        toggle.addEventListener("click", e => {
+          e.preventDefault();
+          dropdown.classList.toggle("is-open");
+        });
+      })();
+    </script>
   </body>
 </html>
