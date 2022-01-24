@@ -18,6 +18,12 @@
       <h1 class="page-header">Company to do something</h1>
     </header>
 
+    <form>
+      <label for="trip">Write something</label>
+      <textarea id="trip" name="about-my-trip" rows="5"></textarea>
+      <button type="submit" id="submit-button">Save</button>
+    </form>
+
     <nav class="main-nav">
       <ul class="nav-links">
         <li>
@@ -84,9 +90,9 @@
         <p>
           PETA claimed Powys was the "worst council in the UK", adding the
           authority to its Christmas naughty list, "along with a lump of coal".
-        <p>
-          The council said the farm applications.
-        </p>
+        </div>p>
+
+        <p>The council said the farm applications.</p>
       </div>
 
       <div class="flyin-grid__item card">
@@ -147,5 +153,31 @@
         </p>
       </div>
     </main>
+
+    <script type="text/javascript">
+      const input = document.getElementById("trip");
+      const button = document.getElementById("submit-button");
+      let timeout = null;
+
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        clearTimeout(timeout);
+        button.classList.add("is-loading");
+        button.disabled = true;
+        input.disabled = true;
+      });
+
+      input.addEventListener("keyup", () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+          button.classList.add("shake");
+        }, 1000);
+      });
+
+      button.addEventListener("animationend", () => {
+        button.classList.remove("shake");
+      });
+    </script>
   </body>
 </html>
